@@ -35,7 +35,7 @@
 
 # OCI context images - imported below and pinned directly in their FROM lines.
 # The base image is pinned in the FROM line below and updated by Renovate.
-FROM quay.io/fedora-ostree-desktops/base-main AS common
+FROM quay.io/fedora/fedora-bootc:44 AS common
 FROM ghcr.io/ublue-os/brew:latest@sha256:e9a72571b7644b6277f0638b6a3c5e497e265e1098ab91224567acbdeb8b74ea AS brew
 
 # Context stage - combine local and imported OCI container resources
